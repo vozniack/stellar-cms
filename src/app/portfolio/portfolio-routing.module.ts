@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {PortfolioComponent} from './portfolio.component';
-import {PortfolioContentComponent} from './portfolio-content/portfolio-content.component';
+import {PortfolioMainComponent} from './portfolio-main/portfolio-main.component';
 
 const routes: Routes = [
   {
@@ -10,7 +10,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: PortfolioContentComponent
+        component: PortfolioMainComponent
       }
     ]
   }

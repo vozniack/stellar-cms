@@ -1,0 +1,21 @@
+@import 'src/styles/variables';
+
+.welcome-container {
+  color: $white;
+
+  margin-top: 92px;
+
+  h1 {
+    font-size: 64px;
+  }
+
+  .brace-open {
+    color: $orange;
+    text-shadow: 0 0 8px rgba($orange, 0.5);
+  }
+
+  .brace-close {
+    color: $blue-light;
+    text-shadow: 0 0 8px rgba($blue-light, 0.5);
+  }
+}

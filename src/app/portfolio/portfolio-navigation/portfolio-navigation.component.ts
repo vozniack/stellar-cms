@@ -6,4 +6,6 @@ import {Component} from '@angular/core';
   styleUrls: ['./portfolio-navigation.component.scss']
 })
 export class PortfolioNavigationComponent {
+
+  title = 'Stellar CMS'
 }

@@ -1,0 +1,110 @@
+@import 'variables';
+
+/* General styles */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Exo 2', sans-serif;
+
+  background: $purple-dark;
+  background: linear-gradient(135deg, $purple-dark 0%, $pink-dark 100%);
+}
+
+::selection {
+  background: $pink-dark;
+  color: $white;
+}
+
+:focus {
+  outline: none;
+}
+
+/* Containers */
+
+.basic-container {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-container {
+  padding: 24px 32px;
+  color: $white;
+
+  .navigation-links {
+    button {
+      background: none;
+      border: 2px solid $white;
+      border-radius: 12px;
+
+      padding: 8px 16px;
+
+      transition: 0.2s;
+
+      span {
+        color: $white;
+
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        transition: 0.2s;
+      }
+
+      &:hover {
+        background: $white;
+
+        span {
+          color: $pink-dark;
+        }
+      }
+    }
+  }
+}
+
+/* Fonts */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+/* Basic */
+
+.full-width {
+  width: 100%;
+}
+
+/* Buttons */
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Temporary */
+
+.container-placeholder {
+  border: 2px solid $white;
+  background: rgba($white, 0.1);
+  border-radius: 12px;
+
+  padding: 24px 32px;
+
+  color: $white;
+}

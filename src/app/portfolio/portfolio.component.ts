@@ -2,9 +2,13 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  template:
+    '<div fxLayout="column">\n' +
+    '  <app-portfolio-navigation></app-portfolio-navigation>\n' +
+    '   <div fxLayout="column" fxLayoutAlign="start center">\n' +
+    '     <router-outlet></router-outlet>\n' +
+    '   </div>\n' +
+    '</div>'
 })
 export class PortfolioComponent {
-
 }

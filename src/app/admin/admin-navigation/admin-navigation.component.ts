@@ -6,4 +6,6 @@ import {Component} from '@angular/core';
   styleUrls: ['./admin-navigation.component.scss']
 })
 export class AdminNavigationComponent {
+
+  title = 'Stellar CMS'
 }

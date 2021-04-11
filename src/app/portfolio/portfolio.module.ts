@@ -2,18 +2,20 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {PortfolioComponent} from './portfolio.component';
 import {PortfolioRoutingModule} from './portfolio-routing.module';
-import {PortfolioContentComponent} from './portfolio-content/portfolio-content.component';
 import {PortfolioNavigationComponent} from './portfolio-navigation/portfolio-navigation.component';
+import {FlexModule} from '@angular/flex-layout';
+import {PortfolioMainComponent} from './portfolio-main/portfolio-main.component';
 
 @NgModule({
   declarations: [
     PortfolioComponent,
-    PortfolioContentComponent,
-    PortfolioNavigationComponent
+    PortfolioNavigationComponent,
+    PortfolioMainComponent
   ],
   imports: [
     CommonModule,
-    PortfolioRoutingModule
+    PortfolioRoutingModule,
+    FlexModule
   ]
 })
 export class PortfolioModule {
