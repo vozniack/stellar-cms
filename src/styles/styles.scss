@@ -7,9 +7,6 @@ body {
   padding: 0;
 
   font-family: 'Exo 2', sans-serif;
-
-  background: $purple-dark;
-  background: linear-gradient(135deg, $purple-dark 0%, $pink-dark 100%);
 }
 
 ::selection {
@@ -23,19 +20,29 @@ body {
 
 /* Containers */
 
-.basic-container {
+div {
   margin: 0;
   padding: 0;
 }
 
+.full-width-container {
+}
+
 .navigation-container {
-  padding: 24px 32px;
+  background: $purple-dark;
+  background: linear-gradient(90deg, $purple-dark 0%, $pink-dark 100%);
+
   color: $white;
+
+  padding: 40px 56px;
+
+  h1 {
+    font-size: 40px;
+  }
 
   .navigation-links {
     button {
       background: none;
-      border: 2px solid $white;
       border-radius: 12px;
 
       padding: 8px 16px;
@@ -70,11 +77,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 80px;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 64px;
 }
 
 h3 {
@@ -92,6 +99,10 @@ h4 {
 }
 
 /* Buttons */
+
+button {
+  border: none;
+}
 
 button:hover {
   cursor: pointer;

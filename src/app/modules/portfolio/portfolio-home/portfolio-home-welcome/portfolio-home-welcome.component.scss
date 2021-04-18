@@ -1,0 +1,30 @@
+@import 'src/styles/variables';
+
+.welcome-container {
+  overflow: hidden;
+
+  background: $purple-dark;
+  background: linear-gradient(90deg, $purple-dark 0%, $pink-dark 100%);
+
+  .welcome-message-container {
+    margin-top: 164px;
+    color: $white;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 200;
+    }
+  }
+
+  .image-container {
+    position: absolute;
+    top: 192px;
+    right: 92px;
+
+    img {
+      width: 768px;
+    }
+  }
+}
+
+

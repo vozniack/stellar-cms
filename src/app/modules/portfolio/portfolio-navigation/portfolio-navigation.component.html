@@ -2,16 +2,9 @@
   <h1>{{title}}</h1>
 
   <div class="navigation-links" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="16px">
-    <button class="navigation-link">
-      <span>Career</span>
-    </button>
 
-    <button class="navigation-link">
-      <span>Projects</span>
-    </button>
-
-    <button class="navigation-link">
-      <span>Skills</span>
+    <button class="navigation-link" *ngFor="let navigationLink of navigationLinks" [routerLink]="navigationLink.route">
+      <span>{{navigationLink.label}}</span>
     </button>
   </div>
 </div>

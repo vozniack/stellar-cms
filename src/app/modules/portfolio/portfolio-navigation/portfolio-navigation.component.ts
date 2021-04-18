@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {NAVIGATION_LINKS} from './portfolio-navigation.const';
 
 @Component({
   selector: 'app-portfolio-navigation',
@@ -8,4 +9,5 @@ import {Component} from '@angular/core';
 export class PortfolioNavigationComponent {
 
   title = 'Stellar CMS'
+  navigationLinks = NAVIGATION_LINKS;
 }

@@ -1,0 +1,10 @@
+@import 'src/styles/variables';
+
+.footer-container {
+  background: $purple-dark;
+  background: linear-gradient(90deg, $purple-dark 0%, $pink-dark 100%);
+
+  color: $white;
+
+  padding: 24px 64px;
+}
