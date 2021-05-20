@@ -4,11 +4,10 @@
     <h3>Zaloguj się</h3>
 
     <div class="form-container" fxLayout="column" fxLayoutGap="24px">
-      <app-input [value]="loginForm.get('login')" [placeholder]="'Login'"></app-input>
-      <app-input [value]="loginForm.get('password')" [placeholder]="'Hasło'"></app-input>
+      <app-input [value]="FormUtil.getFormControl(loginFormGroup, 'login')" [placeholder]="'Login'"></app-input>
+      <app-input [value]="FormUtil.getFormControl(loginFormGroup, 'password')" [placeholder]="'Hasło'"></app-input>
     </div>
 
-    <app-button [type]="'submit'" [disabled]="!loginForm.valid" [label]="'Zaloguj'" [width]="'256px'" (click)="login()">
-    </app-button>
+    <app-button [disabled]="!loginFormGroup.valid" [label]="'Zaloguj'" [width]="'256px'" (click)="login()"></app-button>
   </div>
 </div>

@@ -9,7 +9,7 @@ import {FormControl} from '@angular/forms';
 export class InputComponent {
 
   @Input()
-  value!: FormControl;
+  value!: FormControl | null;
 
   @Input()
   placeholder?: string;
