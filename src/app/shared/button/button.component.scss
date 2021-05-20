@@ -1,0 +1,26 @@
+@import 'src/styles/variables.scss';
+
+.button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+
+  transition: color, background-color 0.2s ease-in-out;
+
+  &:disabled {
+    background: rgba($gray, 0.5) !important;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+
+  &.primary {
+    background: $pink-dark;
+    color: $white;
+
+    &:hover {
+      background: $pink-light;
+    }
+  }
+}

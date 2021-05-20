@@ -1,1 +1,14 @@
-<p>login works!</p>
+<div class="login-wrapper" fxLayoutAlign="center center">
+  <div class="login-container card" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="32px"
+       fxFlex="640px" fxFlex.lt-md="368px">
+    <h3>Zaloguj się</h3>
+
+    <div class="form-container" fxLayout="column" fxLayoutGap="24px">
+      <app-input [value]="loginForm.get('login')" [placeholder]="'Login'"></app-input>
+      <app-input [value]="loginForm.get('password')" [placeholder]="'Hasło'"></app-input>
+    </div>
+
+    <app-button [type]="'submit'" [disabled]="!loginForm.valid" [label]="'Zaloguj'" [width]="'256px'" (click)="login()">
+    </app-button>
+  </div>
+</div>

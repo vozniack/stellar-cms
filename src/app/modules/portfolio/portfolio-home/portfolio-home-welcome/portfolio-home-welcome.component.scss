@@ -6,7 +6,7 @@
   background: $purple-dark;
   background: linear-gradient(90deg, $purple-dark 0%, $pink-dark 100%);
 
-  .welcome-message-container {
+  .message-container {
     margin-top: 164px;
     color: $white;
 
@@ -18,11 +18,11 @@
 
   .image-container {
     position: absolute;
-    top: 192px;
-    right: 92px;
+    top: 160px;
+    right: 256px;
 
     img {
-      width: 768px;
+      width: 432px;
     }
   }
 }

@@ -1,11 +1,12 @@
 <div class="navigation-container" fxLayout="row" fxLayoutAlign="space-between center">
   <h1>{{title}}</h1>
 
-  <div class="navigation-links" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="16px">
-
-    <button class="navigation-link" *ngFor="let navigationLink of navigationLinks" [routerLink]="navigationLink.route">
-      <span>{{navigationLink.label}}</span>
-    </button>
+  <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="16px">
+    <div class="navigation-links" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="8px">
+      <button class="navigation-link" *ngFor="let navigationLink of navigationLinks" [routerLink]="navigationLink.route">
+        <span>{{navigationLink.label}}</span>
+      </button>
+    </div>
   </div>
 </div>
 

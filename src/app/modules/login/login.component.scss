@@ -1,0 +1,21 @@
+@import 'src/styles/variables';
+
+.login-wrapper {
+  background: $purple-dark;
+  background: linear-gradient(90deg, $purple-dark 0%, $pink-dark 100%);
+
+  height: 100vh;
+
+  .login-container {
+    padding: 36px 48px;
+
+    h3 {
+      color: $pink-dark;
+    }
+
+    .form-container {
+      margin-top: 12px;
+      width: 100%;
+    }
+  }
+}
